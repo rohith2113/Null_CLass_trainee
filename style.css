@@ -1,0 +1,25 @@
+body {
+    background-color: lightsteelblue; /* Green */
+}
+
+
+
+
+a{
+    background-color: lightcoral; /* Green */
+    color: black; 
+    margin-left: 50px;
+    border-radius: 2px;      
+}
+.for_a_tag_hello_page {
+    /* here . is used to declare classname used in particular tag  */
+    background-color: lightcoral; /* Green */
+    color: black;
+    margin-left: 50px;
+    padding: 10px;
+    border: solid 2px;
+    border-radius: 10px;
+    font-size: larger;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}

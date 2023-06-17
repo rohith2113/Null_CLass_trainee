@@ -2,24 +2,25 @@
 <html>
     <head>
         <title>Home</title>
+        <!-- instead of writing the same css for every line we can use this type of css -->
+    <link rel="stylesheet" href="/style.css">
     </head>
     <body>
         <header>
             This is my first clone website
         </header>
         <nav>
-            <ol>
-                <li>Home</li>
-                <li>About</li>                
-            </ol>
             <ul>
-                <li>Contact</li>
-                <li>About us</li>
+                <li><a href="/">Home</a></li>
+                <!-- <li><a style="background-color: lightblue; color: lightsalmon;" href="/">Home</a></li> -->
+                <!-- in the above we used inline css -->
+                <li><a href="/about.html">About</a></li>   
+                <li><a href="/contact_us.html">Contant us</a></li>             
             </ul>
         </nav>
         <section>
             <h1>Hello WOrld</h1>
-            <img src="/images/uwp838707.png" alt="rolls royce car">
+            <img src="/images/null class.png" alt="rolls royce car">
             <p>Lorem ipsum dolor sit amet consectetur </br>
                 <hr> <!--horizontal line, but we will be just using the css for this things-->
                 adipisicing elit. Veniam laudantium explicabo omnis officiis dolore deleniti, </p>
@@ -31,7 +32,8 @@
         </section>
         <article>
             <!--pre tags just pre-formats the code i.e, display of content in server page will be in same format as in the code-->
-                <a href="about.php">About</a>    
+                <a href="Welcome.html" class="for_a_tag_hello_page">Welcome</a>    
+                <button>Click me</button>
         </article>
         <aside>
             <ul>
