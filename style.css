@@ -1,18 +1,19 @@
 body {
     background-color: lightsteelblue; /* Green */
+    /* min-height: 100vh; here vh is used to adjust height according to screen size */
 }
 
-
-
-
 a{
-    background-color: lightcoral; /* Green */
     color: black; 
     margin-left: 50px;
     border-radius: 2px;      
+    font-size: xx-large;
+    text-decoration: none;
 }
-.for_a_tag_hello_page {
-    /* here . is used to declare classname used in particular tag  */
+
+
+.for_a_tag_hello_page, button { /* here button is used to declare tagname directly that is used in particular tag in html  */
+    /* here above two are seperated by comma to apply same style to both */
     background-color: lightcoral; /* Green */
     color: black;
     margin-left: 50px;
@@ -21,5 +22,122 @@ a{
     border-radius: 10px;
     font-size: larger;
     text-decoration: none;
+    cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+button:hover { /* here :hover, :active is a psuedo classes used to declare tagname directly that is used in particular tag in html  */
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+    font-size: larger;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button:active { /* here :active is used to declare tagname directly that is used in particular tag in html  */
+    background-color: red;
+    color: black;
+    padding: 10px;
+    font-size: larger;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    height: 300px;
+    background-color: burlywood;
+}
+.image{
+    width: 300px;
+    height: auto; /* here auto is used to adjust height according to width */
+    border-radius: 20px;
+    float: right;
+}
+
+/* li{ */
+    /* display: inline-block; here inline-block is used to display list in horizontal */
+    /* here inline is used to display list in horizontal */
+    /* display: flex; here flex cannot be used to the li tag directly, it can be used to ul tag */
+/* } */
+
+/* flex is mainly useful in case of div containers */
+
+.flex-container {
+    height: 400px;
+    width: 700px;
+    background-color: aquamarine;
+    color:lightsalmon;
+    border: solid 5px black;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex-elements {
+    height: 50px;
+    width: 120px;
+    background-color: lightblue;
+    color:blue;
+    border: solid 3px white;
+}
+.flex-elements:hover {
+    background-color: lightcoral;
+    color:blue;
+    border: solid 3px white;
+}
+
+/*above are major things to discuss in flex */
+.navbar{
+    /* display: inline; */
+    display: flex;
+    list-style: none;
+    height: 50px;
+    align-items: center;
+    background-color: aquamarine;
+    justify-content: space-evenly;
+}
+
+aside {
+    float: left;
+    min-height: calc(100vh - 100px);
+    background-color: mediumaquamarine;
+    margin-top: 0%;
+}
+
+footer{
+    background-color: grey;
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section p{ /* here section is used to declare tagname directly that is used in particular tag in html  */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ 
+header p { /* here header is used to declare tagname directly that is used in particular tag in html  */
+    color: green;
+    font-size: xx-large;
+}
+
+.flex-container .flex-elements:nth-child(3) { /* here nth-child is used to select the particular element in the list */
+    /* here nth-child is also a psuedo classes */
+    background-color: lightcoral;
+    color:blue;
+    border: solid 3px white;
+}
+
+section h1 + p { /* here + is used to select the adjacent element (child element) in the particular list, whatever maybe the next tag it applies when the tag is declared here */
+    color: green;
+    font-size: xx-large;
+}
+
+/* section > p { this selects the every child tag of p of that particular section or div or any main tag */
+    /* font-size: xx-large; */
+/* } */
+
