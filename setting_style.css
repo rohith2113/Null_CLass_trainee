@@ -1,0 +1,48 @@
+.box-container {
+    height: 400px;
+    color: white;
+    width: 500px;
+    background-color: lightslategray;
+    border: solid 3px black;
+    /* margin: 10px; */
+}
+
+.a, .b {
+    height: 100px;
+    width: 200px;
+    border: dotted 3px black;
+    margin: 10px;
+}
+
+.a {
+    background-color: lightskyblue;
+    background-image: url("/images/null\ class.png");
+    /* we can provide image in both html and css
+    in css we can use url() to provide tha path of the image */
+    background-size: 80px 60px;/* this will resize the image */
+    /* background-size: contain; this will resize the image to fit the box */
+    /* background-size: cover; this will resize the image to cover the box */
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+/* .box-container:first-child{ */
+    /* background-color: sandybrown; */
+    /* position: relative; relative to the parent */
+    /* top: 20%; */
+    /* left: 20%; */
+    /* z-index: 0; negative z-index will be behind the parent */
+    /* position: absolute; relative to the body */
+/* } */
+
+/* .box-container:nth-child(3) {
+    background-color: blue;
+    width: 100px;
+    border: solid 3px transparent;
+    /* position: fixed; this is fixed in that position even if you scroll  */
+    /*position: sticky; /* similar to fixed but it will scroll with the page,
+                        once it reaches the top or left (both values in code) 
+                        it will stop */
+    /* top: 20%; */
+    /* left: 20%;  */
+    /* bottom: 10%;
+} */
