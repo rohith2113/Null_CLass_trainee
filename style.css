@@ -24,9 +24,18 @@ a{
     text-decoration: none;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
+    transition: 2s; 
 }
 
-button:hover { /* here :hover, :active is a psuedo classes used to declare tagname directly that is used in particular tag in html  */
+.for_a_tag_hello_page:hover, button:active, button:hover, .for_a_tag_hello_page:active {
+    background-color: red;  
+    color: black;
+}
+
+/* transistion is used to change the style of the tag when the mouse is hovered on it */
+/* transistion should not be used in hover or active or in psuedo classes */
+/* .button:hover { 
+     here :hover, :active is a psuedo classes used to declare tagname directly that is used in particular tag in html 
     background-color: lightblue;
     color: black;
     padding: 10px;
@@ -35,14 +44,14 @@ button:hover { /* here :hover, :active is a psuedo classes used to declare tagna
     font-family: Arial, Helvetica, sans-serif;
 }
 
-button:active { /* here :active is used to declare tagname directly that is used in particular tag in html  */
+button:active { /* here :active is used to declare tagname directly that is used in particular tag in html  
     background-color: red;
     color: black;
     padding: 10px;
     font-size: larger;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-}
+} */ 
 
 section {
     height: 300px;
@@ -141,3 +150,51 @@ section h1 + p { /* here + is used to select the adjacent element (child element
     /* font-size: xx-large; */
 /* } */
 
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    /* transform: translate(100px, 100px) rotate(-15deg) skew(-40deg, 15deg) scale(1.5, 0.5); */
+    /* here translate is used to move the box from its original position 
+        and rotate() is used to rotate the box ,
+        in general it is clockwise direction, 
+        if "-" minus is written in the start then anti-clockwise
+        and skew() it contains x and y axis values respectively */
+    /* here scale is used to increase or decrease the size of the box */
+    /* here 1.5 is for x-axis and 0.5 is for y-axis */
+    /* if scale has only one value then it is applied to both x and y axis, 
+        which in results scales the image to small or big  */
+    animation-name: changelocation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+@keyframes changelocation {
+    0% {
+        left: 10px;
+        top: 10px;
+    }
+    25% {
+        background-color: red;
+        left: 200px;
+        top: 10px;
+    }
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: yellow;
+        left: 10px;
+        top: 200px;
+    }
+    100% {
+        background-color: green;
+        left: 10px;
+        top: 10px;
+    }
+}

@@ -1,10 +1,17 @@
 .box-container {
-    height: 400px;
+    height: 200px;
     color: white;
     width: 500px;
     background-color: lightslategray;
     border: solid 3px black;
-    /* margin: 10px; */
+    margin: 10px;
+}
+
+.box-container-1 {
+    height:400px;
+    color: white;
+    width: 500px;
+    border: solid 3px black;
 }
 
 .a, .b {
@@ -25,24 +32,24 @@
     background-repeat: no-repeat;
     background-position: right bottom;
 }
-/* .box-container:first-child{ */
-    /* background-color: sandybrown; */
-    /* position: relative; relative to the parent */
-    /* top: 20%; */
-    /* left: 20%; */
-    /* z-index: 0; negative z-index will be behind the parent */
-    /* position: absolute; relative to the body */
-/* } */
+.box-container:first-child{
+    background-color: sandybrown;
+    position: relative; /*relative to the parent */
+    top: 20%;
+    left: 20%;
+    z-index: 0; /* negative z-index will be behind the parent */
+    position: absolute; /* relative to the body */
+}
 
-/* .box-container:nth-child(3) {
+.box-container:nth-child(3) {
     background-color: blue;
     width: 100px;
     border: solid 3px transparent;
-    /* position: fixed; this is fixed in that position even if you scroll  */
-    /*position: sticky; /* similar to fixed but it will scroll with the page,
+    position: fixed; /*this is fixed in that position even if you scroll  */
+    position: sticky; /* similar to fixed but it will scroll with the page,
                         once it reaches the top or left (both values in code) 
                         it will stop */
-    /* top: 20%; */
-    /* left: 20%;  */
-    /* bottom: 10%;
-} */
+    top: 30%;
+    left: 20%; 
+    /* bottom: 10%; */
+}
