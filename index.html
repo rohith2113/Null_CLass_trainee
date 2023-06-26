@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h2 id="demo"></h2>
+    <h1 id="demo"></h1>
     <script>
         var demo = document.getElementById("demo");
 
@@ -23,7 +23,7 @@
 
 
         ///number methods
-        let num = 10.123456789;
+        // let num = 10.123456789;
         /// * toString
         // console.log(typeof(num));
         // num_string = num.toString()
@@ -46,6 +46,28 @@
 
 
         ///string methods
+        // let string = "master"
+        /// * escape characters
+        // let string2 = 'master\'s degree' //escape character - \ is used to escape the single quote
+        // demo.innerHTML = typeof(string)
+        // console.log(string2)
+        // let string3 = "John \'s \" \\ \n camera \v broken"
+        // console.log(string3)
+        /// *slice
+        const name = "Tony stark"
+        // demo.innerHTML = name.slice(0,4)
+        //slice() extracts a part of a string and returns the extracted part in a new string.
+        // demo.innerHTML = name.substring(5,10)
+        // demo.innerHTML= name.str(5,10)
+        /// * replace
+        // demo.innerHTML = name.replace("stark","Iron")
+        
+
+        ///string search
+        // demo.innerHTML = name.indexOf("stark")
+        const name1 = "Rohith Rao"
+        demo.innerHTML = name1.indexOf("a", 5) //searches a string for a specified value and returns the position of the match
+        
         
     </script>
 </body>
