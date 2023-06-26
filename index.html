@@ -54,7 +54,7 @@
         // let string3 = "John \'s \" \\ \n camera \v broken"
         // console.log(string3)
         /// *slice
-        const name = "Tony stark"
+        // const name = "Tony stark"
         // demo.innerHTML = name.slice(0,4)
         //slice() extracts a part of a string and returns the extracted part in a new string.
         // demo.innerHTML = name.substring(5,10)
@@ -65,9 +65,64 @@
 
         ///string search
         // demo.innerHTML = name.indexOf("stark")
-        const name1 = "Rohith Rao"
-        demo.innerHTML = name1.indexOf("a", 5) //searches a string for a specified value and returns the position of the match
+        // const name1 = "Rohith Rao"
+        // demo.innerHTML = name1.indexOf("a", 5) //searches a string for a specified value and returns the position of the match
+        // demo.innerHTML = name1.lastIndexOf("R") //searches a from the end of the string in the backward direction
+        // demo.innerHTML = name1.lastIndexOf("R") //searches a from the end of the string in the backward direction
+        // demo.innerHTML = name1.startsWith("o", 1)
+        // startsWith() method slices the whole string from the position mentioned and checks if the sliced string starts with the character mentioned in the method
+        // in the above method if no position is mentioned then it starts from the beginning of original string
+        // demo.innerHTML = name1.endsWith("R")
+        // same as startsWith() but checks from the end of the string, if no position is mentioned it starts moving backward from the end of the original string
+        // demo.innerHTML = name1.includes("R")
+        // includes() method checks if the string contains the character mentioned in the method
+        // demo.innerHTML = name1.search("h")
+        // search() method searches the string for the character mentioned in the method and returns the position of the character
+        // demo.innerHTML = name1.match(/R/g)
+        // match() method returns all the matches found in the string in an array and input into method is case-sensitive
+        // The `match()` method in JavaScript is a string method that searches for a specified pattern within a string and returns an array of all matches found. It uses a regular expression (regex) as the pattern to search for.
+        // In the given example, `name1.match(/R/g)` is using the `match()` method to search for the letter 'R' (case-sensitive) in the string `name1`. The `/R/g` is a regular expression pattern where `/` indicates the start and end of the regular expression, `R` is the pattern to search for (in this case, the letter 'R'), and `g` is a flag that stands for "global" and allows the search to find multiple matches rather than stopping at the first match.
+        // The result of the `match()` method is an array containing all the matches found. In the example, the array of matches is assigned to the `innerHTML` property of a `demo` element, which suggests that the matches will be inserted as HTML content into the specified element.
+
+        // demo.innerHTML = name1.length //length property returns the length of the string
+
+
+
+        ///array methods
+        const cars = ["Rolls Royce", "Thar", "Lamborghini"]
+        /// * array.toString()
+        // demo.innerHTML = cars.toString()
+        /// * join()
+        // demo.innerHTML = cars.join(" - ")
+        /// * push()
+        // cars.push("Ferrari")
+        // demo.innerHTML = cars
+        /// * pop()
+        // cars.pop("Ferrari")
+        // demo.innerHTML = cars
+        /// * shift()
+        // cars.shift()
+        // demo.innerHTML = cars 
+        // shift() removes the first element of the array
+        /// * unshift()
+        // cars.unshift("Ferrari")
+        // demo.innerHTML = cars 
+        // unshift() adds the new element to the beginning of the array
+
         
+
+        ///objects
+        const object = {
+            brandName: "Rolls Royce",
+            model: "Phantom",
+            engine: ["6.75L", "V12"],
+            seats: 5,
+            color: "Black Badge"
+        }
+
+
+
+
         
     </script>
 </body>
